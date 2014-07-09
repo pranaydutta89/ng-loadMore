@@ -1,0 +1,67 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'karma' ]
+2 info using npm@1.4.14
+3 info using node@v0.10.29
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose cache add [ 'karma', null ]
+6 verbose cache add name=undefined spec="karma" args=["karma",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'karma',
+7 verbose parsed url   path: 'karma',
+7 verbose parsed url   href: 'karma' }
+8 silly lockFile 512423cb-karma karma
+9 verbose lock karma C:\Users\prandutt\AppData\Roaming\npm-cache\512423cb-karma.lock
+10 silly lockFile 512423cb-karma karma
+11 silly lockFile 512423cb-karma karma
+12 verbose addNamed [ 'karma', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile cd7961bb-karma karma@
+15 verbose lock karma@ C:\Users\prandutt\AppData\Roaming\npm-cache\cd7961bb-karma.lock
+16 silly addNameRange { name: 'karma', range: '*', hasData: false }
+17 verbose url raw karma
+18 verbose url resolving [ 'https://registry.npmjs.org/', './karma' ]
+19 verbose url resolved https://registry.npmjs.org/karma
+20 info trying registry request attempt 1 at 15:12:59
+21 http GET https://registry.npmjs.org/karma
+22 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+23 info trying registry request attempt 2 at 15:13:10
+24 http GET https://registry.npmjs.org/karma
+25 info retry will retry, error on last attempt: Error: CERT_UNTRUSTED
+26 info trying registry request attempt 3 at 15:14:10
+27 http GET https://registry.npmjs.org/karma
+28 silly lockFile cd7961bb-karma karma@
+29 silly lockFile cd7961bb-karma karma@
+30 error Error: CERT_UNTRUSTED
+30 error     at SecurePair.<anonymous> (tls.js:1365:32)
+30 error     at SecurePair.emit (events.js:92:17)
+30 error     at SecurePair.maybeInitFinished (tls.js:977:10)
+30 error     at CleartextStream.read [as _read] (tls.js:469:13)
+30 error     at CleartextStream.Readable.read (_stream_readable.js:323:10)
+30 error     at EncryptedStream.write [as _write] (tls.js:366:25)
+30 error     at doWrite (_stream_writable.js:226:10)
+30 error     at writeOrBuffer (_stream_writable.js:216:5)
+30 error     at EncryptedStream.Writable.write (_stream_writable.js:183:11)
+30 error     at write (_stream_readable.js:585:24)
+30 error     at flow (_stream_readable.js:594:7)
+30 error     at Socket.pipeOnReadable (_stream_readable.js:626:5)
+31 error If you need help, you may report this *entire* log,
+31 error including the npm and node versions, at:
+31 error     <http://github.com/npm/npm/issues>
+32 error System Windows_NT 6.1.7601
+33 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "karma"
+34 error cwd D:\Users\prandutt\Documents\My Web Sites\ng-loadMore1
+35 error node -v v0.10.29
+36 error npm -v 1.4.14
+37 verbose exit [ 1, true ]
