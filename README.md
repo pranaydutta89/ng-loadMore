@@ -27,13 +27,20 @@ Inject dependency use factory and njoy
 
  inject to your angular module
    
+
  angular.module('myApp', ['loadMoreMod']);
+
 
  use it eg
 
- angular.module('myApp', ['loadMoreMod']).controller(function($scope,queryData){
+ angular.module('myApp', ['loadMoreMod']).controller('myController',function($scope,queryData)
+    {
  
-    queryData.q({'here lies the json paramters'}).then(function(){});
+       queryData.q({'here lies the json parameters'}).then(function()
+       {
+     //do something
+       });
+    });
 
 Thats it buddies !!
 
@@ -45,7 +52,7 @@ no more repetitive code to write and it returns a promise also
 
 
  
- })
+ 
 
 
 
