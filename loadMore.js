@@ -50,7 +50,7 @@ var notPresent = true;
                     headers:options.headers ===undefined ? { 'Content-Type': 'application/json; charset=utf-8' } :options.headers
                 }).then(function (dataRet) {
                     
-                    if (data !== undefined) {
+                    if (dataRet !== undefined) {
                         return dataRet.data.d;
                     }
                     else
