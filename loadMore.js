@@ -45,9 +45,9 @@ var notPresent = true;
        
                 return $http({
                     url: options.url,
-                    method: options.method ===undefined? 'POST':options.method,
+                    method: options.method || 'POST',
                     data: options.jsonData===undefined? {} : JSON.stringify(options.jsonData),
-                    headers:options.headers ===undefined ? { 'Content-Type': 'application/json; charset=utf-8' } :options.headers
+                    headers:options.headers || { 'Content-Type': 'application/json; charset=utf-8' }
                 }).then(function (dataRet) {
                     
                     if (dataRet !== undefined) {
